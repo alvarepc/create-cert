@@ -5,7 +5,7 @@ openssl genrsa -out ssl.key 2048
 echo 
 
 echo "Generating a CSR..."
-openssl req -new -key ssl.key -out ssl.csr -subj "/CN=my-apache.openshift.lab.example.com"
+openssl req -new -key ssl.key -out ssl.csr
 echo
 
 echo "Generating a certificate..."
